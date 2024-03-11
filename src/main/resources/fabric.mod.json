@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "backport",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "bta_backport",
+  "description": "This mod aims to backport future mc version blocks, items, entities, biomes, and features.",
   "authors": [
-    "Turnip Labs"
+    "BDmajora"
   ],
   "contact": {
     "homepage": "",
@@ -19,20 +19,20 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+			"bdmajora.backport.backport"
     ],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"bdmajora.backport.backport"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"bdmajora.backport.backport"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"bdmajora.backport.backport"
 		]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+      "backport.mixins.json"
   ],
 
   "depends": {
