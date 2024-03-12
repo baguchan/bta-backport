@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import turniplabs.halplibe.helper.BlockBuilder;
 import turniplabs.halplibe.util.GameStartEntrypoint;
 import turniplabs.halplibe.util.RecipeEntrypoint;
+import useless.prismaticlibe.helper.SoundHelper;
 
 
 public class backport implements ModInitializer, GameStartEntrypoint, RecipeEntrypoint {
