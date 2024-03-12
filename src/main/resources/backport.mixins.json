@@ -3,9 +3,11 @@
     "minVersion": "0.8",
     "package": "bdmajora.backport.mixin",
     "compatibilityLevel": "JAVA_8",
+    "plugin": "bdmajora.backport.backportMixinPlugin",
     "mixins": [
     ],
     "client": [
+      "Entity.EntityItemMixin"
     ],
     "injectors": {
         "defaultRequire": 1

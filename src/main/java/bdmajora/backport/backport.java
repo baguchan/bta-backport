@@ -28,7 +28,7 @@ public class backport implements ModInitializer, GameStartEntrypoint, RecipeEntr
 
 	private void handleConfig() {
 		Properties prop = new Properties();
-		prop.setProperty("starting_item_id","30000");
+		prop.setProperty("starting_item_id","1900");
 		ConfigHandler config = new ConfigHandler(MOD_ID,prop);
 		UtilIdRegistrar.initIds(config.getInt("starting_item_id"));
 		config.updateConfig();
@@ -41,12 +41,9 @@ public class backport implements ModInitializer, GameStartEntrypoint, RecipeEntr
 		handleConfig();
 
 		// Register items
-		ModItems modItems = new ModItems();
-		modItems.initializeItems();
 		ModItems.register();
 
 		// Add streaming for the music disc
-		// Assuming you have a method similar to SoundHelper.addStreaming in your code
 		SoundHelper.Client.addStreaming(backport.MOD_ID, "pig_step.ogg");
 
 		LOGGER.info("BackPort loaded successfully!");
