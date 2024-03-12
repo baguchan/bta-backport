@@ -24,7 +24,7 @@ public class backport implements ModInitializer, GameStartEntrypoint, RecipeEntr
 		} catch (ClassNotFoundException ignored) {}
 	}
 
-	public static final String MOD_ID = "BackPort";
+	public static final String MOD_ID = "backport";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	private void handleConfig() {
@@ -38,7 +38,7 @@ public class backport implements ModInitializer, GameStartEntrypoint, RecipeEntr
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("BackPort loading! watch out for bugs");
+		LOGGER.info("backport loading! watch out for bugs");
 		handleConfig();
 
 		// Register blocks and items
