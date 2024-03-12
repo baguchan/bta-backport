@@ -1,5 +1,6 @@
 package bdmajora.backport;
 
+import bdmajora.backport.block.ModBlocks;
 import bdmajora.backport.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -28,19 +29,20 @@ public class backport implements ModInitializer, GameStartEntrypoint, RecipeEntr
 
 	private void handleConfig() {
 		Properties prop = new Properties();
-		prop.setProperty("starting_item_id","1900");
+		prop.setProperty("starting_block_id","7000");
+		prop.setProperty("starting_item_id","30000");
 		ConfigHandler config = new ConfigHandler(MOD_ID,prop);
-		UtilIdRegistrar.initIds(config.getInt("starting_item_id"));
+		UtilIdRegistrar.initIds(config.getInt("starting_block_id"), config.getInt("starting_item_id"));
 		config.updateConfig();
 	}
-
 
 	@Override
 	public void onInitialize() {
 		LOGGER.info("BackPort loading! watch out for bugs");
 		handleConfig();
 
-		// Register items
+		// Register blocks and items
+		ModBlocks.register();
 		ModItems.register();
 
 		// Add streaming for the music disc
@@ -48,6 +50,7 @@ public class backport implements ModInitializer, GameStartEntrypoint, RecipeEntr
 
 		LOGGER.info("BackPort loaded successfully!");
 	}
+
 
 	@Override
 	public void beforeGameStart() {

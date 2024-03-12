@@ -5,9 +5,10 @@ import net.minecraft.core.item.Item;
 
 public class UtilIdRegistrar {
 	private static int curr_item_id = 0;
+	private static int curr_block_id = 0;
 	private static boolean[] usedIds;
 
-	public static void initIds(int itemId) {
+	public static void initIds(int blockId, int itemId) {
 		usedIds = new boolean[Item.itemsList.length];
 		for (int i = 0; i < usedIds.length; i++){
 			if (Item.itemsList[i] != null){
@@ -15,11 +16,17 @@ public class UtilIdRegistrar {
 			}
 		}
 		curr_item_id = itemId;
+		curr_block_id = blockId;
 	}
 
 	public static int nextIdItem() {
 		throwException(curr_item_id);
 		return curr_item_id++;
+	}
+
+	public static int nextIdBlock() {
+		throwException(curr_block_id);
+		return curr_block_id++;
 	}
 
 	private static void throwException(int id){
@@ -31,3 +38,4 @@ public class UtilIdRegistrar {
 		}
 	}
 }
+
