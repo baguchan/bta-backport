@@ -5,13 +5,8 @@
     "compatibilityLevel": "JAVA_8",
     "plugin": "bdmajora.backport.backportMixinPlugin",
     "mixins": [
-      "Entity.EntityPlayerSPMixin",
-      "Entity.EntityPlayerMPMixin",
-      "Entity.EntityPlayerMixin",
       "Entity.EntityItemMixin",
-      "EntityTrackerAccessor",
-      "NetClientHandlerMixin",
-      "PlayerRendererMixin"
+      "EntityTrackerAccessor"
     ],
     "client": [
     ],

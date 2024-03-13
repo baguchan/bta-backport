@@ -21,6 +21,9 @@
     "main": [
 			"bdmajora.backport.backport"
     ],
+		"client": [
+			"bdmajora.backport.backportmodclient"
+		],
 		"beforeGameStart": [
 			"bdmajora.backport.backport"
 		],

@@ -3,6 +3,7 @@ package bdmajora.backport;
 import bdmajora.backport.block.ModBlocks;
 import bdmajora.backport.item.ModItems;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.api.ClientModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import turniplabs.halplibe.helper.BlockBuilder;
@@ -41,16 +42,11 @@ public class backport implements ModInitializer, GameStartEntrypoint, RecipeEntr
 		LOGGER.info("backport loading! watch out for bugs");
 		handleConfig();
 
-		// Register blocks and items
 		ModBlocks.register();
 		ModItems.register();
 
-		// Add streaming for the music disc
-		SoundHelper.Client.addStreaming(backport.MOD_ID, "disc_pig_step.ogg");
-
 		LOGGER.info("BackPort loaded successfully!");
 	}
-
 
 	@Override
 	public void beforeGameStart() {
