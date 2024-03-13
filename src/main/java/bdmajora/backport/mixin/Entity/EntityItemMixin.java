@@ -1,6 +1,5 @@
 package bdmajora.backport.mixin.Entity;
 
-import net.minecraft.core.achievement.stat.StatList;
 import net.minecraft.core.entity.EntityItem;
 import net.minecraft.core.entity.player.EntityPlayer;
 import org.spongepowered.asm.mixin.Mixin;
@@ -19,5 +18,4 @@ public class EntityItemMixin {
 	private void stackSize(EntityPlayer player, CallbackInfo ci){
 		previousStackSize = thisAs.item.stackSize;
 	}
-
 }

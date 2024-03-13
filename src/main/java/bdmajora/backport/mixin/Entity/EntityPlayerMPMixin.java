@@ -1,12 +1,11 @@
 package bdmajora.backport.mixin.Entity;
 
-import bdmajora.backport.backport;
 import net.minecraft.client.Minecraft;
-import net.minecraft.core.net.packet.Packet100OpenWindow;
 import net.minecraft.server.entity.player.EntityPlayerMP;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
+
 @Mixin(value = EntityPlayerMP.class, remap = false)
 public abstract class EntityPlayerMPMixin {
 	@Unique
@@ -18,3 +17,4 @@ public abstract class EntityPlayerMPMixin {
 	@Shadow
 	private int currentWindowId = 0;
 }
+
