@@ -24,6 +24,30 @@ public class ModBlocks {
 		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
 		.build(new Block("blackStone",UtilIdRegistrar.nextIdBlock(),Material.stone));
 
+	public static final Block chiseledPolishedBlackstone = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("chiseled_polished_blackstone.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("chiseledPolishedBlackstone",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block crackedPolishedBlackstoneBricks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("cracked_polished_blackstone_bricks.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("crackedPolishedBlackstoneBricks",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block gildedBlackstone = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("gilded_blackstone.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("gildedBlackstone",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
 	public static void register() {
 	}
 }
