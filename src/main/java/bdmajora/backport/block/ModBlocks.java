@@ -276,15 +276,6 @@ public class ModBlocks {
 		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
 		.build(new Block("boneBlock",UtilIdRegistrar.nextIdBlock(),Material.stone));
 
-	public static final Block fletchingTable = new BlockBuilder(backport.MOD_ID)
-		.setBlockSound(BlockSounds.DEFAULT)
-		.setHardness(1.0f)
-		.setResistance(1.0f)
-		.setTopBottomTexture("fletching_table_top.png")
-		.setSideTextures("fletching_table_side.png")
-		.setTags(BlockTags.MINEABLE_BY_AXE)
-		.build(new Block("fletchingTable",UtilIdRegistrar.nextIdBlock(),Material.wood));
-
 	public static void register() {
 	}
 }
