@@ -48,6 +48,8 @@ tile.backport.hayBlock.name=Hay Block
 
 ###overworld
 tile.backport.coarseDirt.name=Coarse Dirt
+tile.backport.boneBlock.name=Bone Block
+tile.backport.boneBlock.name=Bone Block
 
 ###items
 item.backport.backport.name=Music Disc

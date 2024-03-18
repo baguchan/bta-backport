@@ -267,6 +267,24 @@ public class ModBlocks {
 		.setTags(BlockTags.MINEABLE_BY_SHOVEL)
 		.build(new Block("warpedWartBlock",UtilIdRegistrar.nextIdBlock(),Material.dirt));
 
+	public static final Block boneBlock = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.DEFAULT)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTopBottomTexture("bone_block_top.png")
+		.setSideTextures("bone_block_side.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("boneBlock",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block fletchingTable = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.DEFAULT)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTopBottomTexture("fletching_table_top.png")
+		.setSideTextures("fletching_table_side.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("fletchingTable",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
 	public static void register() {
 	}
 }
