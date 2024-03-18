@@ -276,6 +276,24 @@ public class ModBlocks {
 		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
 		.build(new Block("boneBlock",UtilIdRegistrar.nextIdBlock(),Material.stone));
 
+	public static final Block nylium = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.GRASS)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTopBottomTexture("crimson_nylium.png")
+		.setSideTextures("crimson_nylium_side.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("nylium",UtilIdRegistrar.nextIdBlock(),Material.dirt));
+
+	public static final Block warpedNylium = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.GRASS)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTopBottomTexture("warped_wart_block.png")
+		.setSideTextures("warped_nylium.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("warpedNylium",UtilIdRegistrar.nextIdBlock(),Material.dirt));
+
 	public static void register() {
 	}
 }

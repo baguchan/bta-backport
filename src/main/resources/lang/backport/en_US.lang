@@ -36,7 +36,9 @@ tile.backport.netherGoldOre.name=Nether Gold Ore
 tile.backport.netherQuartzOre.name=Nether Quartz Ore
 tile.backport.redNetherBricks.name=Red Nether Bricks
 tile.backport.netherWartBlock.name=Nether Wart Block
-tile.backport.netherWartBlock.name=Nether Wart Block
+tile.backport.warpedWartBlock.name=Warped Wart Block
+tile.backport.nylium.name=Nylium
+tile.backport.warpedNylium.name=Warped Nylium
 
 ### emerald ore
 tile.backport.emeraldOre.name=Emerald Ore
@@ -49,6 +51,8 @@ tile.backport.hayBlock.name=Hay Block
 ###overworld
 tile.backport.coarseDirt.name=Coarse Dirt
 tile.backport.boneBlock.name=Bone Block
+
+###bamboo
 
 ###items
 item.backport.backport.name=Music Disc
