@@ -23,6 +23,12 @@ tile.backport.endStoneBricks.name=End Stone Bricks
 tile.backport.mycelium.name=Mycelium
 
 ###nether
+tile.backport.chiseledNetherBricks.name=Chiseled Nether Bricks
+tile.backport.crackedNetherBricks.name=Cracked Nether Bricks
+tile.backport.netherBricks.name=Nether Bricks
+tile.backport.netherGoldOre.name=Nether Gold Ore
+tile.backport.netherQuartzOre.name=Nether Quartz Ore
+tile.backport.redNetherBricks.name=Red Nether Bricks
 
 ### emerald ore
 tile.backport.emeraldOre.name=Emerald Ore

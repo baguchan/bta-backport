@@ -138,6 +138,53 @@ public class ModBlocks {
 		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
 		.build(new Block("emeraldBlock",UtilIdRegistrar.nextIdBlock(),Material.stone));
 
+	public static final Block chiseledNetherBricks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("chiseled_nether_bricks.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("chiseledNetherBricks",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block crackedNetherBricks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("cracked_nether_bricks.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("crackedNetherBricks",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block netherBricks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("nether_bricks.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("netherBricks",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block netherGoldOre = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("nether_gold_ore.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("netherGoldOre",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block netherQuartzOre = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("nether_quartz_ore.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("netherQuartzOre",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block redNetherBricks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("red_nether_bricks.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("redNetherBricks",UtilIdRegistrar.nextIdBlock(),Material.stone));
 	public static void register() {
 	}
 }
