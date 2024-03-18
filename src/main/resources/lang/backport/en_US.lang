@@ -1,10 +1,33 @@
 ###blocks
+
+###blackstone
 tile.backport.blackStone.name=Black Stone
 tile.backport.chiseledPolishedBlackstone.name=Chiseled Polished Blackstone
 tile.backport.crackedPolishedBlackstoneBricks.name=Cracked Polished Blackstone Bricks
 tile.backport.gildedBlackstone.name=Gilded Blackstone
 tile.backport.polishedBlackstoneBricks.name=Polished Blackstone Bricks
 tile.backport.polishedBlackstone.name=Polished Blackstone
+
+#stone
+tile.backport.crackedStoneBricks.name=Cracked Stone Bricks
+tile.backport.chiseledStoneBricks.name=Chiseled Stone Bricks
+
+###mushroom
+tile.backport.mushroomStem.name=Mushroom Stem
+
+###end blocks
+tile.backport.endStone.name=End Stone
+tile.backport.endStoneBricks.name=End Stone Bricks
+
+####mycelium
+tile.backport.mycelium.name=Mycelium
+
+###nether
+
+### emerald ore
+tile.backport.emeraldOre.name=Emerald Ore
+tile.backport.deepslateEmeraldOre.name=Deepslate Emerald Ore
+tile.backport.emeraldBlock.name=Emerald Block
 
 ###items
 item.backport.backport.name=Music Disc
