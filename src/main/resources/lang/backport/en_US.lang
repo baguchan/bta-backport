@@ -22,6 +22,8 @@ tile.backport.mushroomStem.name=Mushroom Stem
 ###end blocks
 tile.backport.endStone.name=End Stone
 tile.backport.endStoneBricks.name=End Stone Bricks
+tile.backport.purpurBlock.name=Purpur Block
+tile.backport.purpurPillar.name=Purpur Pillar
 
 ####mycelium
 tile.backport.mycelium.name=Mycelium
@@ -33,6 +35,8 @@ tile.backport.netherBricks.name=Nether Bricks
 tile.backport.netherGoldOre.name=Nether Gold Ore
 tile.backport.netherQuartzOre.name=Nether Quartz Ore
 tile.backport.redNetherBricks.name=Red Nether Bricks
+tile.backport.netherWartBlock.name=Nether Wart Block
+tile.backport.netherWartBlock.name=Nether Wart Block
 
 ### emerald ore
 tile.backport.emeraldOre.name=Emerald Ore

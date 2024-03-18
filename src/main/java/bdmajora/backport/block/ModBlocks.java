@@ -234,6 +234,39 @@ public class ModBlocks {
 		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
 		.build(new Block("polishedAndesite",UtilIdRegistrar.nextIdBlock(),Material.stone));
 
+	public static final Block purpurBlock = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("purpur_block.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("purpurBlock",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block purpurPillar = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.DEFAULT)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTopBottomTexture("purpur_pillar_top.png")
+		.setSideTextures("purpur_pillar.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("purpurPillar",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block netherWartBlock = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.GRASS)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("nether_wart_block.png")
+		.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+		.build(new Block("netherWartBlock",UtilIdRegistrar.nextIdBlock(),Material.dirt));
+
+	public static final Block warpedWartBlock = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.GRASS)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("warped_wart_block.png")
+		.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+		.build(new Block("warpedWartBlock",UtilIdRegistrar.nextIdBlock(),Material.dirt));
+
 	public static void register() {
 	}
 }
