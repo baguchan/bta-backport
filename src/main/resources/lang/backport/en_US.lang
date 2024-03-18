@@ -11,6 +11,10 @@ tile.backport.polishedBlackstone.name=Polished Blackstone
 #stone
 tile.backport.crackedStoneBricks.name=Cracked Stone Bricks
 tile.backport.chiseledStoneBricks.name=Chiseled Stone Bricks
+tile.backport.diorite.name=Diorite
+tile.backport.polishedDiorite.name=Polished Diorite
+tile.backport.andesite.name=Andesite
+tile.backport.polishedAndesite.name=Polished Andesite
 
 ###mushroom
 tile.backport.mushroomStem.name=Mushroom Stem
@@ -34,6 +38,12 @@ tile.backport.redNetherBricks.name=Red Nether Bricks
 tile.backport.emeraldOre.name=Emerald Ore
 tile.backport.deepslateEmeraldOre.name=Deepslate Emerald Ore
 tile.backport.emeraldBlock.name=Emerald Block
+
+###farming
+tile.backport.hayBlock.name=Hay Block
+
+###overworld
+tile.backport.coarseDirt.name=Coarse Dirt
 
 ###items
 item.backport.backport.name=Music Disc

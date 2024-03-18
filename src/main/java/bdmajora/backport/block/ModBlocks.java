@@ -111,7 +111,7 @@ public class ModBlocks {
 		.setTopTexture("my_celium_top.png")
 		.setSideTextures("my_celium_side.png")
 		.setBottomTexture("dirt.png")
-		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.setTags(BlockTags.MINEABLE_BY_SHOVEL)
 		.build(new Block("mycelium",UtilIdRegistrar.nextIdBlock(),Material.grass));
 
 	public static final Block emeraldOre = new BlockBuilder(backport.MOD_ID)
@@ -131,12 +131,12 @@ public class ModBlocks {
 		.build(new Block("deepslateEmeraldOre",UtilIdRegistrar.nextIdBlock(),Material.stone));
 
 	public static final Block emeraldBlock = new BlockBuilder(backport.MOD_ID)
-		.setBlockSound(BlockSounds.STONE)
+		.setBlockSound(BlockSounds.METAL)
 		.setHardness(1.0f)
 		.setResistance(1.0f)
 		.setTextures("emerald_block.png")
 		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
-		.build(new Block("emeraldBlock",UtilIdRegistrar.nextIdBlock(),Material.stone));
+		.build(new Block("emeraldBlock",UtilIdRegistrar.nextIdBlock(),Material.metal));
 
 	public static final Block chiseledNetherBricks = new BlockBuilder(backport.MOD_ID)
 		.setBlockSound(BlockSounds.STONE)
@@ -185,6 +185,55 @@ public class ModBlocks {
 		.setTextures("red_nether_bricks.png")
 		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
 		.build(new Block("redNetherBricks",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block hayBlock = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.DEFAULT)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTopBottomTexture("hay_block_top.png")
+		.setSideTextures("hay_block_side.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("hayBlock",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block coarseDirt = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.GRASS)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("coarse_dirt.png")
+		.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+		.build(new Block("coarseDirt",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block diorite = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("diorite.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("diorite",UtilIdRegistrar.nextIdBlock(),Material.stone));
+	public static final Block polishedDiorite = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("polished_diorite.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("polishedDiorite",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block andesite = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("andesite.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("andesite",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block polishedAndesite = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("polished_andesite.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("polishedAndesite",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
 	public static void register() {
 	}
 }
