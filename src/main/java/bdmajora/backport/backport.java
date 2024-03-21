@@ -38,15 +38,14 @@ public class backport implements ModInitializer, GameStartEntrypoint, RecipeEntr
 		LOGGER.info("backport loading! watch out for bugs");
 		handleConfig();
 
-		ModBlocks.register();
-		ModItems.register();
 
 		LOGGER.info("BackPort loaded successfully!");
 	}
 
 	@Override
 	public void beforeGameStart() {
-
+		ModBlocks.register();
+		ModItems.register();
 	}
 
 	@Override
