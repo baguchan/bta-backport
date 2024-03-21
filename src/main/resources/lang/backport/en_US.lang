@@ -39,7 +39,12 @@ tile.backport.netherWartBlock.name=Nether Wart Block
 tile.backport.warpedWartBlock.name=Warped Wart Block
 tile.backport.nylium.name=Nylium
 tile.backport.warpedNylium.name=Warped Nylium
-
+tile.backport.crimson_fungus.name=Crimson Fungus
+tile.backport.warped_fungus.name=Warped Fungus
+tile.backport.crimson_stem.name=Crimson Stem
+tile.backport.warped_stem.name=Warped Stem
+tile.backport.crimson_planks.name=Crimson Planks
+tile.backport.warped_planks.name=Warped Planks
 ### emerald ore
 tile.backport.emeraldOre.name=Emerald Ore
 tile.backport.deepslateEmeraldOre.name=Deepslate Emerald Ore

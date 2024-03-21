@@ -2,6 +2,7 @@ package bdmajora.backport;
 
 import bdmajora.backport.biome.ModBiomes;
 import bdmajora.backport.block.ModBlocks;
+import bdmajora.backport.crafting.ModCraftingManager;
 import bdmajora.backport.item.ModItems;
 import bdmajora.backport.world.biome.provider.BiomeProviderNether;
 import net.fabricmc.api.ModInitializer;
@@ -50,6 +51,6 @@ public class backport implements ModInitializer, GameStartEntrypoint, RecipeEntr
 
 	@Override
 	public void onRecipesReady() {
-
+		ModCraftingManager.onRecipesReady();
 	}
 }
