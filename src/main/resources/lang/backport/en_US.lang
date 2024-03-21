@@ -15,6 +15,10 @@ tile.backport.diorite.name=Diorite
 tile.backport.polishedDiorite.name=Polished Diorite
 tile.backport.andesite.name=Andesite
 tile.backport.polishedAndesite.name=Polished Andesite
+tile.backport.lodestone.name=Lodestone
+
+###quartz
+tile.backport.quartzBricks.name=Quartz Bricks
 
 ###mushroom
 tile.backport.mushroomStem.name=Mushroom Stem
@@ -45,6 +49,12 @@ tile.backport.crimson_stem.name=Crimson Stem
 tile.backport.warped_stem.name=Warped Stem
 tile.backport.crimson_planks.name=Crimson Planks
 tile.backport.warped_planks.name=Warped Planks
+tile.backport.shroomlight.name=Shroom light
+tile.backport.cryingObsidian.name=Crying Obsidian
+tile.backport.netherSprouts.name=Nether Sprouts
+tile.backport.soulSoil.name=Soul Soil
+tile.backport.ancientDebris.name=Ancient Debris
+
 ### emerald ore
 tile.backport.emeraldOre.name=Emerald Ore
 tile.backport.deepslateEmeraldOre.name=Deepslate Emerald Ore
@@ -56,6 +66,10 @@ tile.backport.hayBlock.name=Hay Block
 ###overworld
 tile.backport.coarseDirt.name=Coarse Dirt
 tile.backport.boneBlock.name=Bone Block
+tile.backport.target.name=Target
+tile.backport.loom.name=Loom
+tile.backport.fletchingTable.name=Fletching Table
+tile.backport.smithingTable.name=Smithing Table
 
 ###bamboo
 

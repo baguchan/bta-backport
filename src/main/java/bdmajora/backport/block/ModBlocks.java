@@ -354,6 +354,104 @@ public class ModBlocks {
 		.addTags(BlockTags.FENCES_CONNECT, BlockTags.MINEABLE_BY_AXE)
 		.build(new Block("shroomlight", UtilIdRegistrar.nextIdBlock(), MaterialAccess.nether_log));
 
+	public static final Block cryingObsidian = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("crying_obsidian.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("cryingObsidian",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block lodestone = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTopBottomTexture("lodestone_top.png")
+		.setSideTextures("lodestone_side.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("lodestone",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block netherSprouts = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.GRASS)
+		.setHardness(0.0f)
+		.setResistance(0.5f)
+		.setBlockModel(new BlockModelRenderBlocks(1))
+		.setTextures("nether_sprouts.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new BlockSaplingWarpedFungus("netherSprouts", UtilIdRegistrar.nextIdBlock(), MaterialAccess.nether_plant));
+
+	public static final Block quartzBricks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("quartz_bricks.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("quartzBricks",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block soulSoil = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.SAND)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("soul_soil.png")
+		.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+		.build(new Block("soulSoil",UtilIdRegistrar.nextIdBlock(),Material.sand));
+
+	public static final Block target = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTopBottomTexture("target_top.png")
+		.setSideTextures("target_side.png")
+		.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+		.build(new Block("target",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block ancientDebris = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTopBottomTexture("ancient_debris_top.png")
+		.setSideTextures("ancient_debris_side.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("ancientDebris",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block loom = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTopTexture("loom_top.png")
+		.setBottomTexture("loom_bottom.png")
+		.setNorthTexture("loom_side.png")
+		.setSouthTexture("loom_front.png")
+		.setWestTexture("loom_side.png")
+		.setEastTexture("loom_side.png")
+		.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+		.build(new Block("loom",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block fletchingTable = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTopTexture("fletching_table_top.png")
+		.setBottomTexture("fletching_table_top.png")
+		.setNorthTexture("fletching_table_side.png")
+		.setSouthTexture("fletching_table_front.png")
+		.setWestTexture("fletching_table_side.png")
+		.setEastTexture("fletching_table_side.png")
+		.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+		.build(new Block("fletchingTable",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block smithingTable = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTopTexture("smithing_table_top.png")
+		.setBottomTexture("smithing_table_bottom.png")
+		.setNorthTexture("smithing_table_side.png")
+		.setSouthTexture("smithing_table_front.png")
+		.setWestTexture("smithing_table_side.png")
+		.setEastTexture("smithing_table_side.png")
+		.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+		.build(new Block("smithingTable",UtilIdRegistrar.nextIdBlock(),Material.wood));
 
 	public static void register() {
 	}
