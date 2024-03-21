@@ -1,4 +1,4 @@
-package bdmajora.backport.mixin.Entity;
+package bdmajora.backport.mixin.entity;
 
 import net.minecraft.core.entity.EntityItem;
 import net.minecraft.core.entity.player.EntityPlayer;

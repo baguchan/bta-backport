@@ -5,8 +5,10 @@
     "compatibilityLevel": "JAVA_8",
     "plugin": "bdmajora.backport.backportMixinPlugin",
     "mixins": [
-      "Entity.EntityItemMixin",
-      "EntityTrackerAccessor"
+      "EntityTrackerAccessor",
+      "SurfaceGeneratorNetherMixin",
+      "WorldTypeNetherMixin",
+      "entity.EntityItemMixin"
     ],
     "client": [
     ],

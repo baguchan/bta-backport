@@ -32,6 +32,9 @@
 		],
 		"recipesReady": [
 			"bdmajora.backport.backport"
+		],
+		"terrain-api": [
+			"bdmajora.backport.TerrainAPIPlugin"
 		]
 	},
   "mixins": [
@@ -40,7 +43,10 @@
 
   "depends": {
 		"minecraft": "~7.1-beta.1",
-    "fabricloader": ">=0.13.3"
+		"fabricloader": ">=0.13.3",
+		"halplibe": ">=3.4.14",
+		"dragonfly": ">=1.4.4-7.1",
+		"terrain-api": ">=1.4.4-7.1"
   },
   "suggests": {
   }
