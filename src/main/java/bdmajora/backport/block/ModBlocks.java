@@ -164,7 +164,7 @@ public class ModBlocks {
 		.setResistance(1.0f)
 		.setTextures("nether_gold_ore.png")
 		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
-		.build(new Block("netherGoldOre",UtilIdRegistrar.nextIdBlock(),Material.stone));
+		.build(new BlockNetherGoldOre("netherGoldOre", UtilIdRegistrar.nextIdBlock()));
 
 	public static final Block netherQuartzOre = new BlockBuilder(backport.MOD_ID)
 		.setBlockSound(BlockSounds.STONE)
@@ -343,6 +343,16 @@ public class ModBlocks {
 		.setTopBottomTexture("warped_planks.png")
 		.addTags(BlockTags.FENCES_CONNECT, BlockTags.MINEABLE_BY_AXE)
 		.build(new Block("warped_planks", UtilIdRegistrar.nextIdBlock(), MaterialAccess.nether_log));
+	public static final Block shroomlight = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(0.5f)
+		.setResistance(1.0f)
+		.setLuminance(15)
+		.setSideTextures("shroomlight.png")
+		.setTopBottomTexture("shroomlight.png")
+		.setTopBottomTexture("shroomlight.png")
+		.addTags(BlockTags.FENCES_CONNECT, BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("shroomlight", UtilIdRegistrar.nextIdBlock(), MaterialAccess.nether_log));
 
 
 	public static void register() {

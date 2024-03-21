@@ -119,7 +119,7 @@ public class WorldFeatureNetherFungi extends WorldFeature {
 		float p_225056_
 	) {
 		if (random.nextFloat() < p_225054_) {
-			world.setBlock(x, y, z, Block.glowstone.id);
+			world.setBlock(x, y, z, ModBlocks.shroomlight.id);
 		} else if (random.nextFloat() < p_225055_) {
 			world.setBlock(x, y, z, this.leavesID);
 			if (random.nextFloat() < p_225056_) {
