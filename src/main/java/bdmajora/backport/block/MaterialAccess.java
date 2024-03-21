@@ -13,6 +13,10 @@ public class MaterialAccess extends Material {
 	private boolean motionBlocks = true;
 	private boolean liquid = false;
 	private int pushReaction;
+
+	public static final MaterialAccess nether_plant = new MaterialAccess(MaterialColor.plant);
+	public static final MaterialAccess nether_log = new MaterialAccess(MaterialColor.wood);
+
 	public MaterialAccess(MaterialColor color) {
 		super(color);
 	}

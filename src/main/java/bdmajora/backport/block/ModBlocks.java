@@ -1,16 +1,12 @@
 package bdmajora.backport.block;
 
-import bdmajora.backport.backport;
 import bdmajora.backport.UtilIdRegistrar;
+import bdmajora.backport.backport;
 import net.minecraft.client.render.block.model.BlockModelRenderBlocks;
-import net.minecraft.client.sound.block.BlockSoundDispatcher;
 import net.minecraft.client.sound.block.BlockSounds;
-import net.minecraft.core.block.*;
-import net.minecraft.core.block.entity.TileEntity;
+import net.minecraft.core.block.Block;
 import net.minecraft.core.block.material.Material;
 import net.minecraft.core.block.tag.BlockTags;
-import net.minecraft.core.item.Item;
-import net.minecraft.core.item.block.ItemBlockLayer;
 import turniplabs.halplibe.helper.BlockBuilder;
 
 public class ModBlocks {
@@ -168,7 +164,7 @@ public class ModBlocks {
 		.setResistance(1.0f)
 		.setTextures("nether_gold_ore.png")
 		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
-		.build(new Block("netherGoldOre",UtilIdRegistrar.nextIdBlock(),Material.stone));
+		.build(new BlockNetherGoldOre("netherGoldOre", UtilIdRegistrar.nextIdBlock()));
 
 	public static final Block netherQuartzOre = new BlockBuilder(backport.MOD_ID)
 		.setBlockSound(BlockSounds.STONE)
@@ -282,17 +278,82 @@ public class ModBlocks {
 		.setResistance(1.0f)
 		.setTopBottomTexture("crimson_nylium.png")
 		.setSideTextures("crimson_nylium_side.png")
-		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE, ModBlockTags.GROWS_NETHER_PLANTS)
 		.build(new Block("nylium",UtilIdRegistrar.nextIdBlock(),Material.dirt));
 
 	public static final Block warpedNylium = new BlockBuilder(backport.MOD_ID)
 		.setBlockSound(BlockSounds.GRASS)
 		.setHardness(1.0f)
 		.setResistance(1.0f)
-		.setTopBottomTexture("warped_wart_block.png")
-		.setSideTextures("warped_nylium.png")
+		.setTopBottomTexture("warped_nylium.png")
+		.setSideTextures("warped_nylium_side.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE, ModBlockTags.GROWS_NETHER_PLANTS)
+		.build(new Block("warpedNylium", UtilIdRegistrar.nextIdBlock(), Material.dirt));
+
+	public static final Block crimsonFungus = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.GRASS)
+		.setHardness(0.0f)
+		.setResistance(0.5f)
+		.setBlockModel(new BlockModelRenderBlocks(1))
+		.setTextures("crimson_fungus.png")
 		.setTags(BlockTags.MINEABLE_BY_AXE)
-		.build(new Block("warpedNylium",UtilIdRegistrar.nextIdBlock(),Material.dirt));
+		.build(new BlockSaplingCrimsonFungus("crimson_fungus", UtilIdRegistrar.nextIdBlock(), MaterialAccess.nether_plant));
+	public static final Block warpedFungus = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.GRASS)
+		.setHardness(0.0f)
+		.setResistance(0.5f)
+		.setBlockModel(new BlockModelRenderBlocks(1))
+		.setTextures("warped_fungus.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new BlockSaplingWarpedFungus("warped_fungus", UtilIdRegistrar.nextIdBlock(), MaterialAccess.nether_plant));
+	public static final Block crimsonStem = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setBlockModel(new BlockModelRenderBlocks(27))
+		.setSideTextures("crimson_stem.png")
+		.setTopBottomTexture("crimson_stem_top.png")
+		.setTopBottomTexture("crimson_stem_top.png")
+		.addTags(BlockTags.FENCES_CONNECT, BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("crimson_stem", UtilIdRegistrar.nextIdBlock(), MaterialAccess.nether_log));
+	public static final Block warpedStem = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setBlockModel(new BlockModelRenderBlocks(27))
+		.setSideTextures("warped_stem.png")
+		.setTopBottomTexture("warped_stem_top.png")
+		.addTags(BlockTags.FENCES_CONNECT, BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("warped_stem", UtilIdRegistrar.nextIdBlock(), MaterialAccess.nether_log));
+	public static final Block crimsonPlanks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setSideTextures("crimson_planks.png")
+		.setTopBottomTexture("crimson_planks.png")
+		.setTopBottomTexture("crimson_planks.png")
+		.addTags(BlockTags.FENCES_CONNECT, BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("crimson_planks", UtilIdRegistrar.nextIdBlock(), MaterialAccess.nether_log));
+	public static final Block warpedPlanks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setSideTextures("warped_planks.png")
+		.setTopBottomTexture("warped_planks.png")
+		.setTopBottomTexture("warped_planks.png")
+		.addTags(BlockTags.FENCES_CONNECT, BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("warped_planks", UtilIdRegistrar.nextIdBlock(), MaterialAccess.nether_log));
+	public static final Block shroomlight = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(0.5f)
+		.setResistance(1.0f)
+		.setLuminance(15)
+		.setSideTextures("shroomlight.png")
+		.setTopBottomTexture("shroomlight.png")
+		.setTopBottomTexture("shroomlight.png")
+		.addTags(BlockTags.FENCES_CONNECT, BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("shroomlight", UtilIdRegistrar.nextIdBlock(), MaterialAccess.nether_log));
+
 
 	public static void register() {
 	}

@@ -1,25 +1,20 @@
 package bdmajora.backport;
 
+import bdmajora.backport.biome.ModBiomes;
 import bdmajora.backport.block.ModBlocks;
+import bdmajora.backport.crafting.ModCraftingManager;
 import bdmajora.backport.item.ModItems;
+import bdmajora.backport.world.biome.provider.BiomeProviderNether;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import turniplabs.halplibe.util.ConfigHandler;
 import turniplabs.halplibe.util.GameStartEntrypoint;
 import turniplabs.halplibe.util.RecipeEntrypoint;
-import turniplabs.halplibe.util.ConfigHandler;
 
 import java.util.Properties;
 
 public class backport implements ModInitializer, GameStartEntrypoint, RecipeEntrypoint {
-
-	static {
-		//this is here to possibly fix some class loading issues, do not delete
-		try {
-			Class.forName("net.minecraft.core.block.Block");
-			Class.forName("net.minecraft.core.item.Item");
-		} catch (ClassNotFoundException ignored) {}
-	}
 
 	public static final String MOD_ID = "backport";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
@@ -38,15 +33,15 @@ public class backport implements ModInitializer, GameStartEntrypoint, RecipeEntr
 		LOGGER.info("backport loading! watch out for bugs");
 		handleConfig();
 
-		ModBlocks.register();
-		ModItems.register();
-
 		LOGGER.info("BackPort loaded successfully!");
 	}
 
 	@Override
 	public void beforeGameStart() {
-
+		ModBlocks.register();
+		ModItems.register();
+		ModBiomes.initializeBiomes();
+		BiomeProviderNether.init();
 	}
 
 	@Override
@@ -56,6 +51,6 @@ public class backport implements ModInitializer, GameStartEntrypoint, RecipeEntr
 
 	@Override
 	public void onRecipesReady() {
-
+		ModCraftingManager.onRecipesReady();
 	}
 }
