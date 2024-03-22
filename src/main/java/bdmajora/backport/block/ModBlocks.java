@@ -5,6 +5,7 @@ import bdmajora.backport.backport;
 import net.minecraft.client.render.block.model.BlockModelRenderBlocks;
 import net.minecraft.client.sound.block.BlockSounds;
 import net.minecraft.core.block.Block;
+import net.minecraft.core.block.BlockAxisAligned;
 import net.minecraft.core.block.material.Material;
 import net.minecraft.core.block.tag.BlockTags;
 import turniplabs.halplibe.helper.BlockBuilder;
@@ -315,7 +316,7 @@ public class ModBlocks {
 		.setTopBottomTexture("crimson_stem_top.png")
 		.setTopBottomTexture("crimson_stem_top.png")
 		.addTags(BlockTags.FENCES_CONNECT, BlockTags.MINEABLE_BY_AXE)
-		.build(new Block("crimson_stem", UtilIdRegistrar.nextIdBlock(), MaterialAccess.nether_log));
+		.build(new BlockAxisAligned("crimson_stem", UtilIdRegistrar.nextIdBlock(), MaterialAccess.nether_log));
 	public static final Block warpedStem = new BlockBuilder(backport.MOD_ID)
 		.setBlockSound(BlockSounds.WOOD)
 		.setHardness(2.0f)
@@ -324,7 +325,7 @@ public class ModBlocks {
 		.setSideTextures("warped_stem.png")
 		.setTopBottomTexture("warped_stem_top.png")
 		.addTags(BlockTags.FENCES_CONNECT, BlockTags.MINEABLE_BY_AXE)
-		.build(new Block("warped_stem", UtilIdRegistrar.nextIdBlock(), MaterialAccess.nether_log));
+		.build(new BlockAxisAligned("warped_stem", UtilIdRegistrar.nextIdBlock(), MaterialAccess.nether_log));
 	public static final Block crimsonPlanks = new BlockBuilder(backport.MOD_ID)
 		.setBlockSound(BlockSounds.WOOD)
 		.setHardness(2.0f)
