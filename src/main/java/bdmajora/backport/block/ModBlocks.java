@@ -453,6 +453,216 @@ public class ModBlocks {
 		.setTags(BlockTags.MINEABLE_BY_SHOVEL)
 		.build(new Block("smithingTable",UtilIdRegistrar.nextIdBlock(),Material.wood));
 
+	public static final Block amethystBlock = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("amethyst_block.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("amethystBlock",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block copperBlock = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("copper_block.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("copperBlock",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block chiseledCopper = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("chiseled_copper.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("chiseledCopper",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block copperOre = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("copper_ore.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("copperOre",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block deepslateCopperOre = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("deepslate_copper_ore.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("deepslateCopperOre",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block cutCopper = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("cut_copper.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("cutCopper",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block exposedChiseledCopper = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("exposed_chiseled_copper.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("exposedChiseledCopper",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block exposedCopper = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("exposed_copper.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("exposedCopper",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block exposedCutCopper = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("exposed_cut_copper.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("exposedCutCopper",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block oxidizedChiseledCopper = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("oxidized_chiseled_copper.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("oxidizedChiseledCopper",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block oxidizedCopper = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("oxidized_copper.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("oxidizedCopper",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block oxidizedCutCopper = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("oxidized_cut_copper.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("oxidizedCutCopper",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block rawCopperBlock = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("raw_copper_block.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("rawCopperBlock",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block weatheredChiseledCopper = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("weathered_chiseled_copper.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("weatheredChiseledCopper",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block weatheredCopper = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("weathered_copper.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("weatheredCopper",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block weatheredCutCopper = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("weathered_cut_copper.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("weatheredCutCopper",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block rawGoldBlock = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("raw_gold_block.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("rawGoldBlock",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block rawIronBlock = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("raw_iron_block.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("rawIronBlock",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block calcite = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("calcite.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("calcite",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block dripstoneBlock = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("dripstone_block.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("dripstoneBlock",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block rootedDirt = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.GRASS)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("rooted_dirt.png")
+		.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+		.build(new Block("rootedDirt",UtilIdRegistrar.nextIdBlock(),Material.dirt));
+
+	public static final Block chiseledtuffBricks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTopBottomTexture("chiseled_tuff_bricks_top.png")
+		.setSideTextures("chiseled_tuff_bricks.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("chiseledtuffBricks",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block chiseledTuff = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTopBottomTexture("chiseled_tuff_top.png")
+		.setSideTextures("chiseled_tuff.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("chiseledTuff",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block polishedTuff = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("polished_tuff.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("polishedTuff",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block tuffBricks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("tuff_bricks.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("tuffBricks",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block tuff = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("tuff.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("tuff",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
 	public static void register() {
 	}
 }

@@ -14,6 +14,9 @@ public class ModItems {
 	public static final Item recordRelic = ItemHelper.createItem(backport.MOD_ID, new ItemRecordAccessor(backport.MOD_ID, UtilIdRegistrar.nextIdItem(), "music_disc_relic"), "music_disc_relic.png");
 	public static final Item record5 = ItemHelper.createItem(backport.MOD_ID, new ItemRecordAccessor(backport.MOD_ID, UtilIdRegistrar.nextIdItem(), "music_disc_5"), "music_disc_5.png");
 
+	//nether items
+//	public static final Item netherBrick = ItemHelper.createItem(backport.MOD_ID, new ItemRecordAccessor(backport.MOD_ID, UtilIdRegistrar.nextIdItem(), "nether_brick"), "nether_brick.png");
+
 	public static void register() {
 	}
 }
