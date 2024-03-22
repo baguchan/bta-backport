@@ -8,6 +8,7 @@ import net.minecraft.core.block.Block;
 import net.minecraft.core.block.BlockAxisAligned;
 import net.minecraft.core.block.material.Material;
 import net.minecraft.core.block.tag.BlockTags;
+import net.minecraft.core.item.tool.ItemToolPickaxe;
 import turniplabs.halplibe.helper.BlockBuilder;
 
 public class ModBlocks {
@@ -408,8 +409,7 @@ public class ModBlocks {
 
 	public static final Block ancientDebris = new BlockBuilder(backport.MOD_ID)
 		.setBlockSound(BlockSounds.STONE)
-		.setHardness(1.0f)
-		.setResistance(1.0f)
+		.setHardness(6.0F).setResistance(1000.0f)
 		.setTopBottomTexture("ancient_debris_top.png")
 		.setSideTextures("ancient_debris_side.png")
 		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
@@ -455,6 +455,8 @@ public class ModBlocks {
 		.build(new Block("smithingTable",UtilIdRegistrar.nextIdBlock(),Material.wood));
 
 	public static void register() {
+		ItemToolPickaxe.miningLevels.put(ModBlocks.ancientDebris, 3);
+		ItemToolPickaxe.miningLevels.put(ModBlocks.cryingObsidian, 3);
 	}
 }
 
