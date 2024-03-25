@@ -164,7 +164,7 @@ public class ModBlocks {
 		.setResistance(1.0f)
 		.setTextures("nether_gold_ore.png")
 		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
-		.build(new BlockNetherGoldOre("netherGoldOre", UtilIdRegistrar.nextIdBlock,()Material.stone));
+		.build(new BlockNetherGoldOre("netherGoldOre", UtilIdRegistrar.nextIdBlock()));
 
 	public static final Block netherQuartzOre = new BlockBuilder(backport.MOD_ID)
 		.setBlockSound(BlockSounds.STONE)

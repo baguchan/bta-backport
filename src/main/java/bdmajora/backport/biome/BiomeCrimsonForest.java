@@ -6,6 +6,7 @@ import net.minecraft.core.world.biome.BiomeNether;
 public class BiomeCrimsonForest extends BiomeNether {
 
 	public BiomeCrimsonForest() {
+		super("BiomeCrimsonForest");
 		this.spawnableMonsterList.clear();
 		this.spawnableCreatureList.clear();
 		this.spawnableWaterCreatureList.clear();
