@@ -3,7 +3,7 @@ package bdmajora.backport.block;
 import bdmajora.backport.UtilIdRegistrar;
 import bdmajora.backport.backport;
 import net.minecraft.client.render.block.model.BlockModelRenderBlocks;
-import net.minecraft.client.sound.block.BlockSounds;
+import net.minecraft.core.sound.BlockSounds;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.material.Material;
 import net.minecraft.core.block.tag.BlockTags;
@@ -164,7 +164,7 @@ public class ModBlocks {
 		.setResistance(1.0f)
 		.setTextures("nether_gold_ore.png")
 		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
-		.build(new BlockNetherGoldOre("netherGoldOre", UtilIdRegistrar.nextIdBlock()));
+		.build(new BlockNetherGoldOre("netherGoldOre", UtilIdRegistrar.nextIdBlock,()Material.stone));
 
 	public static final Block netherQuartzOre = new BlockBuilder(backport.MOD_ID)
 		.setBlockSound(BlockSounds.STONE)
