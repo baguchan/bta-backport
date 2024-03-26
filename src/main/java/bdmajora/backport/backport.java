@@ -2,7 +2,7 @@ package bdmajora.backport;
 
 import bdmajora.backport.biome.ModBiomes;
 import bdmajora.backport.block.ModBlocks;
-//import bdmajora.backport.crafting.ModCraftingManager;
+import bdmajora.backport.crafting.ModCraftingManager;
 import bdmajora.backport.item.ModItems;
 import bdmajora.backport.world.biome.provider.BiomeProviderNether;
 import net.fabricmc.api.ModInitializer;
@@ -14,7 +14,7 @@ import turniplabs.halplibe.util.RecipeEntrypoint;
 
 import java.util.Properties;
 
-public class backport implements ModInitializer, GameStartEntrypoint {
+public class backport implements ModInitializer, GameStartEntrypoint, RecipeEntrypoint {
 
 	public static final String MOD_ID = "backport";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
@@ -49,8 +49,8 @@ public class backport implements ModInitializer, GameStartEntrypoint {
 
 	}
 
-//	@Override
-//	public void onRecipesReady() {
-//		ModCraftingManager.onRecipesReady();
-//	}
+	@Override
+	public void onRecipesReady() {
+		ModCraftingManager.onRecipesReady();
+	}
 }

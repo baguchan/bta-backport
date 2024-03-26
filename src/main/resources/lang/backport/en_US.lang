@@ -78,9 +78,17 @@ tile.backport.loom.name=Loom
 tile.backport.fletchingTable.name=Fletching Table
 tile.backport.smithingTable.name=Smithing Table
 tile.backport.rootedDirt.name=Rooted Dirt
+tile.backport.muddyMangroveRoot.name=Muddy Mangrove Root
+tile.backport.mud.name=Mud
+tile.backport.mudBricks.name=Mud Bricks
+tile.backport.packedMud.name=Packed Mud
 
 ###caves and cliffs
 tile.backport.amethystBlock.name=Amethyst Block
+tile.backport.reinforcedDeepslate.name=Reinforced Deepslate
+
+###Warden blocks
+tile.backport.sculk.name.Sculk
 
 ###copper
 tile.backport.copperBlock.name=Copper Block
@@ -97,10 +105,64 @@ tile.backport.rawCopperBlock.name=Raw Copper Block
 tile.backport.weatheredChiseledCopper.name=Weathered Chiseled Copper
 tile.backport.weatheredCopper.name=Weathered Copper
 tile.backport.weatheredCutCopper.name=Weathered Cut Copper
+tile.backport.weatheredCutCopper.name=Weathered Cut Copper
+tile.backport.cutCopper.name=Cut Copper
+
+###frog light
+tile.backport.ochrefroglight.name=Ochre Frog light
+tile.backport.pearlescentfroglight.name=Pearlescent Frog light
+tile.backport.verdantfroglight.name=Verdant Frog light
+
+###sea blocks
+tile.backport.seaLantern.name=Sea Lantern
+
+###ore
 tile.backport.rawIronBlock.name=Raw Iron Block
 tile.backport.rawGoldBlock.name=Raw Gold Block
 
 ###bamboo
+tile.backport.bambooBlock.name=Bamboo Block
+tile.backport.bambooMosaic.name=Bamboo Mosaic
+tile.backport.bambooPlanks.name=Bamboo Planks
+tile.backport.strippedBambooBlock.name=Stripped Bamboo Block
+
+###terracotta
+tile.backport.blackTerracotta.name=Black Terracotta
+tile.backport.blueTerracotta.name=Blue Terracotta
+tile.backport.brownTerracotta.name=Brown Terracotta
+tile.backport.cyanTerracotta.name=Cyan Terracotta
+tile.backport.grayTerracotta.name=Gray Terracotta
+tile.backport.greenTerracotta.name=Green Terracotta
+tile.backport.lightBlueTerracotta.name=Light Blue Terracotta
+tile.backport.lightGrayTerracotta.name=Light Gray Terracotta
+tile.backport.limeTerracotta.name=Lime Terracotta
+tile.backport.magentaTerracotta.name=Magenta Terracotta
+tile.backport.orangeTerracotta.name=Orange Terracotta
+tile.backport.pinkTerracotta.name=Pink Terracotta
+tile.backport.purpleTerracotta.name=Purple Terracotta
+tile.backport.redTerracotta.name=Red Terracotta
+tile.backport.terracotta.name=Terracotta
+tile.backport.whiteTerracotta.name=White Terracotta
+tile.backport.yellowTerracotta.name=Yellow Terracotta
+
+
+###glazed terracotta
+tile.backport.blackGlazedTerracotta.name=Black Glazed Terracotta
+tile.backport.blueGlazedTerracotta.name=Blue Glazed Terracotta
+tile.backport.brownGlazedTerracotta.name=Brown Glazed Terracotta
+tile.backport.cyanGlazedTerracotta.name=Cyan Glazed Terracotta
+tile.backport.grayGlazedTerracotta.name=Gray Glazed Terracotta
+tile.backport.greenGlazedTerracotta.name=Green Glazed Terracotta
+tile.backport.lightBlueGlazedTerracotta.name=Light Blue Glazed Terracotta
+tile.backport.lightGrayGlazedTerracotta.name=Light Gray Glazed Terracotta
+tile.backport.limeGlazedTerracotta.name=Lime Glazed Terracotta
+tile.backport.magentaGlazedTerracotta.name=Magenta Glazed Terracotta
+tile.backport.orangeGlazedTerracotta.name=Orange Glazed Terracotta
+tile.backport.pinkGlazedTerracotta.name=Pink Glazed Terracotta
+tile.backport.purpleGlazedTerracotta.name=Purple Glazed Terracotta
+tile.backport.redGlazedTerracotta.name=Red Glazed Terracotta
+tile.backport.whiteGlazedTerracotta.name=White Glazed Terracotta
+tile.backport.yellowGlazedTerracotta.name=Yellow Glazed Terracotta
 
 ###items
 item.backport.backport.name=Music Disc
