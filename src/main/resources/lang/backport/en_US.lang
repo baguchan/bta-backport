@@ -87,6 +87,22 @@ tile.backport.packedMud.name=Packed Mud
 ###caves and cliffs
 tile.backport.amethystBlock.name=Amethyst Block
 tile.backport.reinforcedDeepslate.name=Reinforced Deepslate
+tile.backport.basalt.name=Basalt
+tile.backport.smoothBasalt.name=Smooth Basalt
+
+###deepslate
+tile.backport.deepslate.name=Deepslate
+tile.backport.chiseledDeepslate.name=Chiseled Deepslate
+tile.backport.cobbledDeepslate.name=Cobbled Deepslate
+tile.backport.crackedDeepslateBricks.name=Cracked Deepslate Bricks
+tile.backport.crackedDeepslateTiles.name=Cracked Deepslate Tiles
+tile.backport.deepslateBricks.name=Deepslate Bricks
+tile.backport.deepslateCoalOre.name=Deepslate Coal Ore
+tile.backport.deepslateDiamondOre.name=Deepslate Diamond Ore
+tile.backport.deepslateIronOre.name=Deepslate Iron Ore
+tile.backport.deepslateLapisOre.name=Deepslate Lapis Ore
+tile.backport.deepslateRedstoneOre.name=Deepslate Redstone Ore
+tile.backport.polishedDeepslate.name=Polished Deepslate
 
 ###Warden blocks
 tile.backport.sculk.name.Sculk

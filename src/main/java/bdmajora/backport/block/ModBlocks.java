@@ -3,6 +3,7 @@ package bdmajora.backport.block;
 import bdmajora.backport.UtilIdRegistrar;
 import bdmajora.backport.backport;
 import net.minecraft.client.render.block.model.BlockModelRenderBlocks;
+import net.minecraft.core.item.Item;
 import net.minecraft.core.sound.BlockSounds;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.material.Material;
@@ -1054,6 +1055,113 @@ public class ModBlocks {
 		.setTextures("magma.png")
 		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
 		.build(new Block("magma",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block smoothBasalt = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("smooth_basalt.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("smoothBasalt",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block basalt = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTopBottomTexture("basalt_top.png")
+		.setSideTextures("basalt_side.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("basalt",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block deepslate = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTopBottomTexture("deepslate_top.png")
+		.setSideTextures("deepslate.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("deepslate",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block chiseledDeepslate = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("chiseled_deepslate.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("chiseledDeepslate",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block cobbledDeepslate = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("cobbled_deepslate.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("cobbledDeepslate",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block crackedDeepslateBricks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("cracked_deepslate_bricks.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("crackedDeepslateBricks",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block crackedDeepslateTiles = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("cracked_deepslate_tiles.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("crackedDeepslateTiles",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block deepslateBricks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("deepslate_bricks.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("deepslateBricks",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block deepslateCoalOre = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("deepslate_coal_ore.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("deepslateCoalOre",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block deepslateDiamondOre = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("deepslate_diamond_ore.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("deepslateDiamondOre",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block deepslateIronOre = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("deepslate_iron_ore.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("deepslateIronOre",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block deepslateLapisOre = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("deepslate_lapis_ore.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("deepslateLapisOre",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block polishedDeepslate = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("polished_deepslate.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("polishedDeepslate",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
 	public static void register() {
 	}
 }
