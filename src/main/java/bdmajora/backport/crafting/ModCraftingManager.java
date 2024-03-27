@@ -23,16 +23,46 @@ public class ModCraftingManager {
 	public static void onRecipesReady() {
 
 		RecipeBuilder.Shaped(backport.MOD_ID)
-			.setShape("T")
-			.addInput('T', ModBlocks.crimsonStem)
+			.setShape("S")
+			.addInput('S', ModBlocks.crimsonStem)
 			.setConsumeContainer(false)
 			.create("crimsonPlanks", new ItemStack(ModBlocks.crimsonPlanks, 4));
 
 		RecipeBuilder.Shaped(backport.MOD_ID)
-			.setShape("T")
-			.addInput('T', ModBlocks.warpedStem)
+			.setShape("S")
+			.addInput('S', ModBlocks.warpedStem)
 			.setConsumeContainer(false)
 			.create("warpedPlanks", new ItemStack(ModBlocks.warpedPlanks, 4));
+
+		RecipeBuilder.Shaped(backport.MOD_ID)
+			.setShape("L")
+			.addInput('L', Block.logBirch)
+			.setConsumeContainer(false)
+			.create("birchPlank", new ItemStack(ModBlocks.birchPlank, 4));
+
+		RecipeBuilder.Shaped(backport.MOD_ID)
+			.setShape("L")
+			.addInput('L', ModBlocks.acaciaLog)
+			.setConsumeContainer(false)
+			.create("acaciaPlanks", new ItemStack(ModBlocks.acaciaPlanks, 4));
+
+		RecipeBuilder.Shaped(backport.MOD_ID)
+			.setShape("L")
+			.addInput('L', ModBlocks.darkOakLog)
+			.setConsumeContainer(false)
+			.create("darkOakPlanks", new ItemStack(ModBlocks.darkOakPlanks, 4));
+
+		RecipeBuilder.Shaped(backport.MOD_ID)
+			.setShape("L")
+			.addInput('L', ModBlocks.jungleLog)
+			.setConsumeContainer(false)
+			.create("junglePlanks", new ItemStack(ModBlocks.junglePlanks, 4));
+
+		RecipeBuilder.Shaped(backport.MOD_ID)
+			.setShape("L")
+			.addInput('L', ModBlocks.mangroveLog)
+			.setConsumeContainer(false)
+			.create("mangrovePlanks", new ItemStack(ModBlocks.mangrovePlanks, 4));
 
 	}
 }

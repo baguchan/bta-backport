@@ -1162,6 +1162,98 @@ public class ModBlocks {
 		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
 		.build(new Block("polishedDeepslate",UtilIdRegistrar.nextIdBlock(),Material.stone));
 
+	public static final Block birchPlank = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("birch_planks.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("birchPlank",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block acaciaLog = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTopBottomTexture("acacia_log_top.png")
+		.setSideTextures("acacia_log.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("acaciaLog",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block acaciaPlanks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("acacia_planks.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("acaciaPlanks",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block darkOakLog = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTopBottomTexture("dark_oak_log_top.png")
+		.setSideTextures("dark_oak_log.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("darkOakLog",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block darkOakPlanks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("dark_oak_planks.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("darkOakPlanks",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block jungleLog = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTopBottomTexture("jungle_log_top.png")
+		.setSideTextures("jungle_log.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("jungleLog",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block junglePlanks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("jungle_planks.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("junglePlanks",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block mangroveLog = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTopBottomTexture("mangrove_log_top.png")
+		.setSideTextures("mangrove_log.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("mangroveLog",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block mangrovePlanks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("mangrove_planks.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("mangrovePlanks",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block spruceLog = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTopBottomTexture("spruce_log_top.png")
+		.setSideTextures("spruce_log.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("spruceLog",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block sprucePlanks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("spruce_planks.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("sprucePlanks",UtilIdRegistrar.nextIdBlock(),Material.wood));
 	public static void register() {
 	}
 }

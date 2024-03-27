@@ -181,6 +181,29 @@ tile.backport.redGlazedTerracotta.name=Red Glazed Terracotta
 tile.backport.whiteGlazedTerracotta.name=White Glazed Terracotta
 tile.backport.yellowGlazedTerracotta.name=Yellow Glazed Terracotta
 
+## Birch
+tile.backport.birchPlank.name=Birch Plank
+
+### Acacia
+tile.backport.acaciaLog.name=Acacia Log
+tile.backport.acaciaPlanks.name=Acacia Planks
+
+### Dark oak
+tile.backport.darkOakLog.name=Dark Oak Log
+tile.backport.darkOakPlanks.name=Dark Oak Planks
+
+### Jungle
+tile.backport.jungleLog.name=Jungle Log
+tile.backport.junglePlanks.name=Jungle Planks
+
+### Mangrove
+tile.backport.mangroveLog.name=Mangrove Log
+tile.backport.mangrovePlanks.name=Mangrove Planks
+
+### Spruce
+tile.backport.spruceLog.name=Spruce Log
+tile.backport.sprucePlanks.name=Spruce Planks
+
 ###items
 item.backport.record.Disc.name=Music Disc
 item.backport.item.brick.name=Nether Brick
