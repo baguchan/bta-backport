@@ -61,6 +61,7 @@ tile.backport.cryingObsidian.name=Crying Obsidian
 tile.backport.netherSprouts.name=Nether Sprouts
 tile.backport.soulSoil.name=Soul Soil
 tile.backport.ancientDebris.name=Ancient Debris
+tile.backport.magma.name=Magma
 
 ### emerald ore
 tile.backport.emeraldOre.name=Emerald Ore
@@ -165,5 +166,5 @@ tile.backport.whiteGlazedTerracotta.name=White Glazed Terracotta
 tile.backport.yellowGlazedTerracotta.name=Yellow Glazed Terracotta
 
 ###items
-item.backport.backport.name=Music Disc
-#item.backport.nether_brick.name=Nether Brick
+item.backport.record.Disc.name=Music Disc
+item.backport.item.brick.name=Nether Brick

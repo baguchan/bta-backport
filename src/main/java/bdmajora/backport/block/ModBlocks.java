@@ -1044,6 +1044,16 @@ public class ModBlocks {
 		.setTextures("yellow_glazed_terracotta.png")
 		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
 		.build(new Block("yellowGlazedTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block magma = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setBlockModel(new BlockModelRenderBlocks(27))
+		.setLuminance(5)
+		.setTextures("magma.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("magma",UtilIdRegistrar.nextIdBlock(),Material.stone));
 	public static void register() {
 	}
 }
