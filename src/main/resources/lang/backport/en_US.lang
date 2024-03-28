@@ -188,6 +188,7 @@ tile.backport.birchPlank.name=Birch Plank
 ### Acacia
 tile.backport.acaciaLog.name=Acacia Log
 tile.backport.acaciaPlanks.name=Acacia Planks
+tile.backport.acaciaLeaves.name=Acacia Leaves
 
 ### Dark oak
 tile.backport.darkOakLog.name=Dark Oak Log

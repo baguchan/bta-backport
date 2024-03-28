@@ -1,6 +1,7 @@
 package bdmajora.backport.item;
 
 import bdmajora.backport.backport;
+import bdmajora.backport.item.Doors.ItemCrimsonDoor;
 import bdmajora.backport.UtilIdRegistrar;
 import net.minecraft.core.item.Item;
 import net.minecraft.core.item.ItemPlaceable;
@@ -16,6 +17,9 @@ public class ModItems {
 
 	//nether items
 	public static final Item netherBrick = ItemHelper.createItem(backport.MOD_ID, new ItemAccessor("item.brick", UtilIdRegistrar.nextIdItem(), "nether_brick"), "nether_brick.png");
+
+	//Doors
+	public static final Item crimsonDoor = ItemHelper.createItem(backport.MOD_ID, new ItemCrimsonDoor("item.crimsonDoor", UtilIdRegistrar.nextIdItem()), "crimson_door.png");
 	public static void register() {
 	}
 }

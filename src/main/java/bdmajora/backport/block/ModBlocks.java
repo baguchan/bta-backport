@@ -2,6 +2,7 @@ package bdmajora.backport.block;
 
 import bdmajora.backport.UtilIdRegistrar;
 import bdmajora.backport.backport;
+import bdmajora.backport.block.Door.CrimsonDoor;
 import net.minecraft.client.render.block.model.BlockModelRenderBlocks;
 import net.minecraft.core.item.Item;
 import net.minecraft.core.sound.BlockSounds;
@@ -344,6 +345,7 @@ public class ModBlocks {
 		.setTopBottomTexture("warped_planks.png")
 		.addTags(BlockTags.FENCES_CONNECT, BlockTags.MINEABLE_BY_AXE)
 		.build(new Block("warped_planks", UtilIdRegistrar.nextIdBlock(), MaterialAccess.nether_log));
+
 	public static final Block shroomlight = new BlockBuilder(backport.MOD_ID)
 		.setBlockSound(BlockSounds.WOOD)
 		.setHardness(0.5f)
@@ -1518,6 +1520,26 @@ public class ModBlocks {
 		.setTextures("spruce_planks.png")
 		.setTags(BlockTags.MINEABLE_BY_AXE)
 		.build(new Block("sprucePlanks",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block crimsonDoorTop = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("crimson_door_top.png")
+		.setBlockModel(new BlockModelRenderBlocks(7))
+		.addTags(BlockTags.MINEABLE_BY_AXE, BlockTags.NOT_IN_CREATIVE_MENU)
+		.build(new CrimsonDoor("crimsonDoorTop", UtilIdRegistrar.nextIdBlock(), Material.wood, true));
+
+	public static final Block crimsonDoorBottom = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("crimson_door_bottom.png")
+		.setBlockModel(new BlockModelRenderBlocks(7))
+		.addTags(BlockTags.MINEABLE_BY_AXE, BlockTags.NOT_IN_CREATIVE_MENU)
+		.build(new CrimsonDoor("crimsonDoorBottom", UtilIdRegistrar.nextIdBlock(), Material.wood, false));
+
+
 	public static void register() {
 	}
 }
