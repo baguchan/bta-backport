@@ -83,6 +83,7 @@ tile.backport.muddyMangroveRoot.name=Muddy Mangrove Root
 tile.backport.mud.name=Mud
 tile.backport.mudBricks.name=Mud Bricks
 tile.backport.packedMud.name=Packed Mud
+tile.backport.granite.name=Granite
 
 ###caves and cliffs
 tile.backport.amethystBlock.name=Amethyst Block
@@ -203,6 +204,42 @@ tile.backport.mangrovePlanks.name=Mangrove Planks
 ### Spruce
 tile.backport.spruceLog.name=Spruce Log
 tile.backport.sprucePlanks.name=Spruce Planks
+
+###concrete powder
+tile.backport.blackConcretePowder.name=Black Concrete Powder
+tile.backport.blueConcretePowder.name=Blue Concrete Powder
+tile.backport.brownConcretePowder.name=Brown Concrete Powder
+tile.backport.cyanConcretePowder.name=Cyan Concrete Powder
+tile.backport.grayConcretePowder.name=Gray Concrete Powder
+tile.backport.greenConcretePowder.name=Green Concrete Powder
+tile.backport.lightBlueConcretePowder.name=Light Blue Concrete Powder
+tile.backport.lightGrayConcretePowder.name=Light Gray Concrete Powder
+tile.backport.limeConcretePowder.name=Lime Concrete Powder
+tile.backport.magentaConcretePowder.name=Magenta Concrete Powder
+tile.backport.orangeConcretePowder.name=Orange Concrete Powder
+tile.backport.pinkConcretePowder.name=Pink Concrete Powder
+tile.backport.purpleConcretePowder.name=Purple Concrete Powder
+tile.backport.redConcretePowder.name=Red Concrete Powder
+tile.backport.whiteConcretePowder.name=White Concrete Powder
+tile.backport.yellowConcretePowder.name=Yellow Concrete Powder
+
+###concrete
+tile.backport.blackConcrete.name=Black Concrete
+tile.backport.blueConcrete.name=Blue Concrete
+tile.backport.brownConcrete.name=Brown Concrete
+tile.backport.cyanConcrete.name=Cyan Concrete
+tile.backport.grayConcrete.name=Gray Concrete
+tile.backport.greenConcrete.name=Green Concrete
+tile.backport.lightBlueConcrete.name=Light Blue Concrete
+tile.backport.lightGrayConcrete.name=Light Gray Concrete
+tile.backport.limeConcrete.name=Lime Concrete
+tile.backport.magentaConcrete.name=Magenta Concrete
+tile.backport.orangeConcrete.name=Orange Concrete
+tile.backport.pinkConcrete.name=Pink Concrete
+tile.backport.purpleConcrete.name=Purple Concrete
+tile.backport.redConcrete.name=Red Concrete
+tile.backport.whiteConcrete.name=White Concrete
+tile.backport.yellowConcrete.name=Yellow Concrete
 
 ###items
 item.backport.record.Disc.name=Music Disc
