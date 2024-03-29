@@ -6,6 +6,7 @@ import net.minecraft.core.world.biome.BiomeNether;
 public class BiomeWarpedForest extends BiomeNether {
 
 	public BiomeWarpedForest() {
+		super("BiomeWarpedForest");
 		this.spawnableMonsterList.clear();
 		this.spawnableCreatureList.clear();
 		this.spawnableWaterCreatureList.clear();

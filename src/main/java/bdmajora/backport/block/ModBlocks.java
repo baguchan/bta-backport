@@ -2,8 +2,10 @@ package bdmajora.backport.block;
 
 import bdmajora.backport.UtilIdRegistrar;
 import bdmajora.backport.backport;
+import bdmajora.backport.block.Door.CrimsonDoor;
 import net.minecraft.client.render.block.model.BlockModelRenderBlocks;
-import net.minecraft.client.sound.block.BlockSounds;
+import net.minecraft.core.item.Item;
+import net.minecraft.core.sound.BlockSounds;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.BlockAxisAligned;
 import net.minecraft.core.block.material.Material;
@@ -345,6 +347,7 @@ public class ModBlocks {
 		.setTopBottomTexture("warped_planks.png")
 		.addTags(BlockTags.FENCES_CONNECT, BlockTags.MINEABLE_BY_AXE)
 		.build(new Block("warped_planks", UtilIdRegistrar.nextIdBlock(), MaterialAccess.nether_log));
+
 	public static final Block shroomlight = new BlockBuilder(backport.MOD_ID)
 		.setBlockSound(BlockSounds.WOOD)
 		.setHardness(0.5f)
@@ -454,9 +457,1092 @@ public class ModBlocks {
 		.setTags(BlockTags.MINEABLE_BY_SHOVEL)
 		.build(new Block("smithingTable",UtilIdRegistrar.nextIdBlock(),Material.wood));
 
+	public static final Block amethystBlock = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("amethyst_block.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("amethystBlock",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block copperBlock = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("copper_block.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("copperBlock",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block chiseledCopper = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("chiseled_copper.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("chiseledCopper",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block copperOre = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("copper_ore.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("copperOre",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block deepslateCopperOre = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("deepslate_copper_ore.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("deepslateCopperOre",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block cutCopper = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("cut_copper.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("cutCopper",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block exposedChiseledCopper = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("exposed_chiseled_copper.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("exposedChiseledCopper",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block exposedCopper = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("exposed_copper.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("exposedCopper",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block exposedCutCopper = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("exposed_cut_copper.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("exposedCutCopper",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block oxidizedChiseledCopper = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("oxidized_chiseled_copper.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("oxidizedChiseledCopper",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block oxidizedCopper = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("oxidized_copper.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("oxidizedCopper",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block oxidizedCutCopper = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("oxidized_cut_copper.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("oxidizedCutCopper",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block rawCopperBlock = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("raw_copper_block.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("rawCopperBlock",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block weatheredChiseledCopper = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("weathered_chiseled_copper.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("weatheredChiseledCopper",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block weatheredCopper = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("weathered_copper.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("weatheredCopper",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block weatheredCutCopper = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("weathered_cut_copper.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("weatheredCutCopper",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block rawGoldBlock = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("raw_gold_block.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("rawGoldBlock",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block rawIronBlock = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("raw_iron_block.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("rawIronBlock",UtilIdRegistrar.nextIdBlock(),Material.metal));
+
+	public static final Block calcite = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("calcite.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("calcite",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block dripstoneBlock = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("dripstone_block.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("dripstoneBlock",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block rootedDirt = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.GRASS)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("rooted_dirt.png")
+		.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+		.build(new Block("rootedDirt",UtilIdRegistrar.nextIdBlock(),Material.dirt));
+
+	public static final Block chiseledtuffBricks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTopBottomTexture("chiseled_tuff_bricks_top.png")
+		.setSideTextures("chiseled_tuff_bricks.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("chiseledtuffBricks",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block chiseledTuff = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTopBottomTexture("chiseled_tuff_top.png")
+		.setSideTextures("chiseled_tuff.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("chiseledTuff",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block polishedTuff = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("polished_tuff.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("polishedTuff",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block tuffBricks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("tuff_bricks.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("tuffBricks",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block tuff = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("tuff.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("tuff",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block ochrefroglight = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(0.5f)
+		.setResistance(1.0f)
+		.setLuminance(15)
+		.setTopBottomTexture("ochre_froglight_top.png")
+		.setSideTextures("ochre_froglight_side.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("ochrefroglight",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block pearlescentfroglight = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(0.5f)
+		.setResistance(1.0f)
+		.setLuminance(15)
+		.setTopBottomTexture("pearlescent_froglight_top.png")
+		.setSideTextures("pearlescent_froglight_side.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("pearlescentfroglight",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block verdantfroglight = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(0.5f)
+		.setResistance(1.0f)
+		.setLuminance(15)
+		.setTopBottomTexture("verdant_froglight_top.png")
+		.setSideTextures("verdant_froglight_side.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("verdantfroglight",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block seaLantern = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setBlockModel(new BlockModelRenderBlocks(27))
+		.setLuminance(15)
+		.setTextures("sea_lantern.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("seaLantern",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block mud = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.GRASS)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("mud.png")
+		.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+		.build(new Block("mud",UtilIdRegistrar.nextIdBlock(),Material.dirt));
+
+	public static final Block muddyMangroveRoot = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.GRASS)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTopBottomTexture("muddy_mangrove_roots_top.png")
+		.setSideTextures("muddy_mangrove_roots_side.png")
+		.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+		.build(new Block("muddyMangroveRoot",UtilIdRegistrar.nextIdBlock(),Material.dirt));
+
+	public static final Block mudBricks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("mud_bricks.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("mudBricks",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block packedMud = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("packed_mud.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("packedMud",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block reinforcedDeepslate = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTopTexture("reinforced_deepslate_top.png")
+		.setBottomTexture("reinforced_deepslate_bottom.png")
+		.setSideTextures("reinforced_deepslate_side.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("reinforcedDeepslate",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block sculk = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setBlockModel(new BlockModelRenderBlocks(27))
+		.setTextures("sculk.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("sculk",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block bambooBlock = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTopBottomTexture("bamboo_block_top.png")
+		.setSideTextures("bamboo_block.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("bambooBlock",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block bambooMosaic = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("bamboo_mosaic.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("bambooMosaic",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block bambooPlanks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("bamboo_planks.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("bambooPlanks",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block strippedBambooBlock = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTopBottomTexture("stripped_bamboo_block_top.png")
+		.setSideTextures("stripped_bamboo_block.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("strippedBambooBlock",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block blackTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("black_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("blackTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block blueTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("blue_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("blueTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block brownTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("brown_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("brownTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block cyanTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("cyan_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("cyanTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block grayTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("gray_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("grayTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block greenTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("green_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("greenTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block lightBlueTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("light_blue_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("lightBlueTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block lightGrayTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("light_gray_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("lightGrayTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block limeTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("lime_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("limeTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block magentaTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("magenta_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("magentaTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block orangeTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("orange_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("orangeTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block pinkTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("pink_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("pinkTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block purpleTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("purple_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("purpleTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block redTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("red_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("redTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block terracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("terracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block whiteTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("white_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("whiteTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block yellowTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("yellow_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("yellowTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block blackGlazedTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("black_glazed_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("blackGlazedTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block blueGlazedTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("blue_glazed_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("blueGlazedTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block brownGlazedTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("brown_glazed_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("brownGlazedTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block cyanGlazedTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("cyan_glazed_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("cyanGlazedTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block grayGlazedTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("gray_glazed_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("grayGlazedTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block greenGlazedTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("green_glazed_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("greenGlazedTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block lightBlueGlazedTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("light_blue_glazed_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("lightBlueGlazedTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block lightGrayGlazedTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("light_gray_glazed_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("lightGrayGlazedTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block limeGlazedTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("lime_glazed_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("limeGlazedTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block magentaGlazedTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("magenta_glazed_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("magentaGlazedTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block orangeGlazedTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("orange_glazed_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("orangeGlazedTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block purpleGlazedTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("purple_glazed_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("purpleGlazedTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block redGlazedTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("red_glazed_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("redGlazedTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block whiteGlazedTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("white_glazed_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("whiteGlazedTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block yellowGlazedTerracotta = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(1.0f)
+		.setResistance(1.0f)
+		.setTextures("yellow_glazed_terracotta.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("yellowGlazedTerracotta",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block magma = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.METAL)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setBlockModel(new BlockModelRenderBlocks(27))
+		.setLuminance(5)
+		.setTextures("magma.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("magma",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block smoothBasalt = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("smooth_basalt.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("smoothBasalt",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block basalt = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTopBottomTexture("basalt_top.png")
+		.setSideTextures("basalt_side.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("basalt",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block deepslate = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTopBottomTexture("deepslate_top.png")
+		.setSideTextures("deepslate.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("deepslate",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block chiseledDeepslate = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("chiseled_deepslate.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("chiseledDeepslate",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block cobbledDeepslate = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("cobbled_deepslate.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("cobbledDeepslate",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block crackedDeepslateBricks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("cracked_deepslate_bricks.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("crackedDeepslateBricks",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block crackedDeepslateTiles = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("cracked_deepslate_tiles.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("crackedDeepslateTiles",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block deepslateBricks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("deepslate_bricks.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("deepslateBricks",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block deepslateCoalOre = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("deepslate_coal_ore.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("deepslateCoalOre",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block deepslateDiamondOre = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("deepslate_diamond_ore.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("deepslateDiamondOre",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block deepslateIronOre = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("deepslate_iron_ore.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("deepslateIronOre",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block deepslateLapisOre = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("deepslate_lapis_ore.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("deepslateLapisOre",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block polishedDeepslate = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("polished_deepslate.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("polishedDeepslate",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block granite = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("granite.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("granite",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block blackConcrete = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("black_concrete.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("blackConcrete",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block blackConcretePowder = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("black_concrete_powder.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("blackConcretePowder",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block blueConcretePowder = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("blue_concrete_powder.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("blueConcretePowder",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block blueConcrete = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("blue_concrete.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("blueConcrete",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block brownConcretePowder = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("brown_concrete_powder.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("brownConcretePowder",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block brownConcrete = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("brown_concrete.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("brownConcrete",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block cyanConcretePowder = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("cyan_concrete_powder.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("cyanConcretePowder",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block cyanConcrete = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("cyan_concrete.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("cyanConcrete",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block grayConcretePowder = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("gray_concrete_powder.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("grayConcretePowder",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block grayConcrete = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("gray_concrete.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("grayConcrete",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block greenConcretePowder = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("green_concrete_powder.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("greenConcretePowder",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block greenConcrete = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("green_concrete.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("greenConcrete",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block lightBlueConcretePowder = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("light_blue_concrete_powder.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("lightBlueConcretePowder",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block lightBlueConcrete = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("light_blue_concrete.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("lightBlueConcrete",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block lightGrayConcretePowder = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("light_gray_concrete_powder.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("lightGrayConcretePowder",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block lightGrayConcrete = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("light_gray_concrete.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("lightGrayConcrete",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block limeConcretePowder = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("lime_concrete_powder.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("limeConcretePowder",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block limeConcrete = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("lime_concrete.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("limeConcrete",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block magentaConcretePowder = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("magenta_concrete_powder.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("magentaConcretePowder",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block magentaConcrete = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("magenta_concrete.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("magentaConcrete",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block orangeConcretePowder = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("orange_concrete_powder.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("orangeConcretePowder",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block orangeConcrete = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("orange_concrete.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("orangeConcrete",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block pinkConcretePowder = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("pink_concrete_powder.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("pinkConcretePowder",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block pinkConcrete = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("pink_concrete.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("pinkConcrete",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block purpleConcretePowder = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("purple_concrete_powder.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("purpleConcretePowder",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block purpleConcrete = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("purple_concrete.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("purpleConcrete",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block redConcretePowder = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("red_concrete_powder.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("redConcretePowder",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block redConcrete = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("red_concrete.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("redConcrete",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block whiteConcretePowder = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("white_concrete_powder.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("whiteConcretePowder",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block whiteConcrete = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("white_concrete.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("whiteConcrete",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block yellowConcretePowder = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("yellow_concrete_powder.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("yellowConcretePowder",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block yellowConcrete = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.STONE)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("yellow_concrete.png")
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+		.build(new Block("yellowConcrete",UtilIdRegistrar.nextIdBlock(),Material.stone));
+
+	public static final Block birchPlank = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("birch_planks.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("birchPlank",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block acaciaLog = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTopBottomTexture("acacia_log_top.png")
+		.setSideTextures("acacia_log.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("acaciaLog",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block acaciaPlanks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("acacia_planks.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("acaciaPlanks",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block darkOakLog = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTopBottomTexture("dark_oak_log_top.png")
+		.setSideTextures("dark_oak_log.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("darkOakLog",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block darkOakPlanks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("dark_oak_planks.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("darkOakPlanks",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block jungleLog = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTopBottomTexture("jungle_log_top.png")
+		.setSideTextures("jungle_log.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("jungleLog",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block junglePlanks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("jungle_planks.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("junglePlanks",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block mangroveLog = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTopBottomTexture("mangrove_log_top.png")
+		.setSideTextures("mangrove_log.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("mangroveLog",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block mangrovePlanks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("mangrove_planks.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("mangrovePlanks",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block spruceLog = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTopBottomTexture("spruce_log_top.png")
+		.setSideTextures("spruce_log.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("spruceLog",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block sprucePlanks = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("spruce_planks.png")
+		.setTags(BlockTags.MINEABLE_BY_AXE)
+		.build(new Block("sprucePlanks",UtilIdRegistrar.nextIdBlock(),Material.wood));
+
+	public static final Block crimsonDoorTop = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("crimson_door_top.png")
+		.setBlockModel(new BlockModelRenderBlocks(7))
+		.addTags(BlockTags.MINEABLE_BY_AXE, BlockTags.NOT_IN_CREATIVE_MENU)
+		.build(new CrimsonDoor("crimsonDoorTop", UtilIdRegistrar.nextIdBlock(), Material.wood, true));
+
+	public static final Block crimsonDoorBottom = new BlockBuilder(backport.MOD_ID)
+		.setBlockSound(BlockSounds.WOOD)
+		.setHardness(2.0f)
+		.setResistance(2.0f)
+		.setTextures("crimson_door_bottom.png")
+		.setBlockModel(new BlockModelRenderBlocks(7))
+		.addTags(BlockTags.MINEABLE_BY_AXE, BlockTags.NOT_IN_CREATIVE_MENU)
+		.build(new CrimsonDoor("crimsonDoorBottom", UtilIdRegistrar.nextIdBlock(), Material.wood, false));
+
+
 	public static void register() {
 		ItemToolPickaxe.miningLevels.put(ModBlocks.ancientDebris, 3);
 		ItemToolPickaxe.miningLevels.put(ModBlocks.cryingObsidian, 3);
 	}
 }
-
