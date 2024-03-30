@@ -206,6 +206,9 @@ tile.backport.mangrovePlanks.name=Mangrove Planks
 tile.backport.spruceLog.name=Spruce Log
 tile.backport.sprucePlanks.name=Spruce Planks
 
+###cherry
+tile.backport.cherryPlanks.name=Cherry Planks
+
 ###concrete powder
 tile.backport.blackConcretePowder.name=Black Concrete Powder
 tile.backport.blueConcretePowder.name=Blue Concrete Powder
@@ -241,6 +244,22 @@ tile.backport.purpleConcrete.name=Purple Concrete
 tile.backport.redConcrete.name=Red Concrete
 tile.backport.whiteConcrete.name=White Concrete
 tile.backport.yellowConcrete.name=Yellow Concrete
+
+###Doors
+item.backport.item.crimsonDoor.name=Crimson Door
+item.backport.item.warpedDoor.name=Warped Door
+item.backport.item.acaciaDoor.name=Acacia Door
+item.backport.item.bambooDoor.name=Bamboo Door
+item.backport.item.birchDoor.name=Birch Door
+item.backport.item.cherryDoor.name=Cherry Door
+item.backport.item.copperDoor.name=Copper Door
+item.backport.item.darkOakDoor.name=Dark Oak Door
+item.backport.item.exposedCopperDoor.name=Exposed Copper Door
+item.backport.item.jungleDoor.name=Jungle Door
+item.backport.item.mangroveDoor.name=Mangrove Door
+item.backport.item.oxidizedCopperDoor.name=Oxidized Copper Door
+item.backport.item.spruceDoor.name=Spruce Door
+item.backport.item.weatheredCopperDoor.name=Weathered Copper Door
 
 ###items
 item.backport.record.Disc.name=Music Disc

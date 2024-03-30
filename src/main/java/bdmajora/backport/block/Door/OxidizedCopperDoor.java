@@ -10,15 +10,15 @@ import net.minecraft.core.item.Item;
 import net.minecraft.core.item.ItemStack;
 import net.minecraft.core.world.World;
 
-public class CrimsonDoor extends BlockDoor {
+public class OxidizedCopperDoor extends BlockDoor {
 
-	public CrimsonDoor(String name, int id, Material material, boolean isTop) {
+	public OxidizedCopperDoor(String name, int id, Material material, boolean isTop) {
 		super(name, id, material, isTop);
 		// Additional custom properties or logic can be added here
 	}
 
 	@Override
 	public ItemStack[] getBreakResult(World world, EnumDropCause dropCause, int x, int y, int z, int meta, TileEntity tileEntity) {
-		return new ItemStack[]{new ItemStack(ModItems.crimsonDoor)};
+		return new ItemStack[]{new ItemStack(ModItems.oxidizedCopperDoor)};
 	}
 }

@@ -1,7 +1,7 @@
 package bdmajora.backport.item;
 
 import bdmajora.backport.backport;
-import bdmajora.backport.item.Doors.ItemCrimsonDoor;
+import bdmajora.backport.item.Doors.*;
 import bdmajora.backport.UtilIdRegistrar;
 import net.minecraft.core.item.Item;
 import net.minecraft.core.item.ItemPlaceable;
@@ -20,6 +20,33 @@ public class ModItems {
 
 	//Doors
 	public static final Item crimsonDoor = ItemHelper.createItem(backport.MOD_ID, new ItemCrimsonDoor("item.crimsonDoor", UtilIdRegistrar.nextIdItem()), "crimson_door.png");
+
+	public static final Item wardpedDoor = ItemHelper.createItem(backport.MOD_ID, new ItemWarpedDoor("item.warpedDoor", UtilIdRegistrar.nextIdItem()), "warped_door.png");
+
+	public static final Item acaciaDoor = ItemHelper.createItem(backport.MOD_ID, new ItemAcaciaDoor("item.acaciaDoor", UtilIdRegistrar.nextIdItem()), "acacia_door.png");
+
+	public static final Item bambooDoor = ItemHelper.createItem(backport.MOD_ID, new ItemBambooDoor("item.bambooDoor", UtilIdRegistrar.nextIdItem()), "bamboo_door.png");
+
+	public static final Item birchDoor = ItemHelper.createItem(backport.MOD_ID, new ItemBirchDoor("item.birchDoor", UtilIdRegistrar.nextIdItem()), "birch_door.png");
+
+	public static final Item cherryDoor = ItemHelper.createItem(backport.MOD_ID, new ItemCherryDoor("item.cherryDoor", UtilIdRegistrar.nextIdItem()), "cherry_door.png");
+
+	public static final Item copperDoor = ItemHelper.createItem(backport.MOD_ID, new ItemCopperDoor("item.copperDoor", UtilIdRegistrar.nextIdItem()), "copper_door.png");
+
+	public static final Item darkOakDoor = ItemHelper.createItem(backport.MOD_ID, new ItemDarkOakDoor("item.darkOakDoor", UtilIdRegistrar.nextIdItem()), "dark_oak_door.png");
+
+	public static final Item exposedCopperDoor = ItemHelper.createItem(backport.MOD_ID, new ItemExposedCopperDoor("item.exposedCopperDoor", UtilIdRegistrar.nextIdItem()), "exposed_copper_door.png");
+
+	public static final Item jungleDoor = ItemHelper.createItem(backport.MOD_ID, new ItemJungleDoor("item.jungleDoor", UtilIdRegistrar.nextIdItem()), "jungle_door.png");
+
+	public static final Item mangroveDoor = ItemHelper.createItem(backport.MOD_ID, new ItemMangroveDoor("item.mangroveDoor", UtilIdRegistrar.nextIdItem()), "mangrove_door.png");
+
+	public static final Item oxidizedCopperDoor = ItemHelper.createItem(backport.MOD_ID, new ItemOxidizedCopperDoor("item.oxidizedCopperDoor", UtilIdRegistrar.nextIdItem()), "oxidized_copper_door.png");
+
+	public static final Item spruceDoor = ItemHelper.createItem(backport.MOD_ID, new ItemSpruceDoor("item.spruceDoor", UtilIdRegistrar.nextIdItem()), "spruce_door.png");
+
+	public static final Item weatheredCopperDoor = ItemHelper.createItem(backport.MOD_ID, new ItemWeatheredCopperDoor("item.weatheredCopperDoor", UtilIdRegistrar.nextIdItem()), "weathered_copper_door.png");
+
 	public static void register() {
 	}
 }
